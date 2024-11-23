@@ -1,0 +1,2 @@
+fix bug where you can spamming drawer buttons and it breaks the app (need debounce)
+same with sending chat messages

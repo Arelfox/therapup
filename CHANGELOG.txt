@@ -1,0 +1,33 @@
+informal changelog / journal
+10/21/24
+    flutter is so much better than kivy holy shit
+    chat works but no chatgpt
+    home screen and chat screen drawer works
+    made theme black + orange
+        wait isn't this pornhub's color theme
+11/21/24
+    added "profile icon" to messages
+
+    split home and chat screen into seperate .dart files
+    chatgpt integration via chat_gpt_sdk package
+
+    chatgpt works and can respond
+        need to hide api key, use custom fine tuned model instead of just gpt4, give it the proper prompts, and just generally add more features like image understanding
+    yeah so far loving flutter
+        hot reload is so useful
+    
+    even added a temporary "Typing..." message and async for the chatgpt messages
+        need error handling though
+    
+    shortcut for sending message (shift + enter), and some helpful tooltips
+    also a tooltip for the exact time sent
+    improved textfield by adding min and max lines
+11/22/24
+    app now uses fine tuned model of 4o-mini from previous work in python
+    made service account + api key to get off personal account
+
+    drawer is now located on a main screen instead of in each .dart file for home and chat screen
+    persistant screens now work fully (doesn't make a new screen every drawer click) using index stacks
+
+    added debounce for drawer listtiles and chatgpt send button
+
