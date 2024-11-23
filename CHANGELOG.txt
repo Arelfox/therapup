@@ -30,4 +30,15 @@ informal changelog / journal
     persistant screens now work fully (doesn't make a new screen every drawer click) using index stacks
 
     added debounce for drawer listtiles and chatgpt send button
-
+11/23/24
+    got git/github vsc support working finally
+    new idea for app:
+        renamed app to therapup (support and feedback from melinda)
+        instead of just having like a cold messaging chatbot app, you can talk to a pet (dog) about your feelings
+        need to update theme, chat screen, etc.
+        need animations and assets for dog character
+        virtual pet customization ?!
+    TODO:
+        fine tune gpt model for new usecase with a 'doggier' personality
+        update theme
+        find how to animate in flutter

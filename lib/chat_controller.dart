@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:chat_gpt_sdk/chat_gpt_sdk.dart';
 
+import 'keys.dart'; // api key
+
 class ChatController extends ChangeNotifier {
   /* Variables */
   List<Chat> chatList = Chat.generate();
@@ -16,9 +18,8 @@ class ChatController extends ChangeNotifier {
       TextEditingController();
   late final FocusNode focusNode = FocusNode();
 
-  
   late OpenAI openAI = OpenAI.instance.build(
-    token: "sk-svcacct-XPQTCUEaatKcUCXvevVaixPZ4j2pxhAzrMLJPl00GMTI7CZEfbWoiAHS2Lo2N_Qh2JRgT3BlbkFJJ4zsjtgBjETIEFUOPN6RwmWSkVOu6aFFgyeBiMnK8zhvunbhPzZ-4yFLy02sgsdtIOkA",  // project service account
+    token: Keys.openAIApiKey(),  // project service account, keys.dart is in .gitignore
     baseOption: HttpSetup(
       receiveTimeout: const Duration(seconds: 30),
       connectTimeout: const Duration(seconds: 30)),
